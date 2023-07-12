@@ -1,0 +1,77 @@
+$font-titulares: 'Raleway', sans-serif;
+
+@use 'entradas_principales';
+
+
+body{
+    margin: 0%;
+    background-color: rgb(255, 255, 255);
+    h1, h2, h3{font-family: $font-titulares;}
+    p, a{font-family: 'Open Sans', sans-serif;}
+}
+
+
+
+.header{
+    padding: 5px 5vw;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    a{
+        text-decoration: none;
+        padding-left: 20px;
+        font-size: large;
+        color: black;
+    }
+    .links-header{
+        margin-left: auto;
+    }
+}
+
+#root{
+    margin: 10px auto;
+    width: 90vw;
+    .titular{
+        background-color: rgba(245, 245, 220, 0.645);
+        /*background-image: url("../img/desert_1.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;*/
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+        padding: 50px 0px;
+        border-radius: 10px;
+        h1{
+            font-size: 55px;
+            margin: 10px 0px 10px 0px;
+        }
+        .img-titular{
+            width: 35vw;
+            height: 450px;
+            border-radius: 10px;
+            background-image: url(https://images.unsplash.com/photo-1688976694262-89230d6133ba?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            box-shadow: 2px 2px 5px 2px #d8d8d8;
+        }
+        .titular-describcion{
+            font-size: large;
+            width: 25vw;
+        }
+    }
+}
+
+.footer{
+    background-color: #34AAB7;
+    padding: 10px 30px;
+}
+
+@media(max-width: 1024px){
+    .secc-principal{.titular{h1{font-size: 45px;}}}
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700&display=swap');

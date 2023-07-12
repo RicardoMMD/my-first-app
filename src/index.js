@@ -1,6 +1,8 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import SuperHeader, {Saludar, Nombrar, Mates} from './componenentes'
+import SuperHeader, {Card, Nombrar, Titular} from './componenentes'
+import './sass/styles.scss'
+
 
 const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(rootElement)
@@ -8,10 +10,9 @@ const root = ReactDOM.createRoot(rootElement)
 
 root.render(<>  
     <SuperHeader/>
-    <Saludar habilidad='matemáticas' />
-    <Saludar habilidad='estadística' />
-    <Saludar habilidad='programación' />
-    <Saludar habilidad={24} />
-    <Saludar habilidad={[7,'mundo',547]} />
+    <Titular/>
+    <Card titulo ='matemáticas' />
+    <Card titulo={24} />
+    <Card titulo={[7,'mundo',547]} />
     <Nombrar />
     </>)

@@ -1,0 +1,24 @@
+.entradas-principales{
+    display: grid;
+    min-height: 35px;
+    /*background-color:cadetblue;*/
+    padding: 5px;
+    width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}
+.ultimas{
+    display: flex;
+    align-items: center;
+}
+.entrada{
+    background-color: aqua;
+    width: 400px;
+    h3{margin: 0%;}
+}
+.img-entrada{
+    background-image: url("https://images.unsplash.com/photo-1684346819553-11174cbc8f05?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80");
+    width: 400px;
+    min-height: 200px;
+    color: aliceblue;
+    bottom: 0%;
+}
